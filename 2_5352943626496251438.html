@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TЭST нА VaЛерY</h1>
+    <img src="valera.jpg" alt="" width="100px">
+    <form name="myform">
+        <p>ChTo люbIt дЕLatь VаLera</p>
+        <input type="radio" name="q1" value="a"><span>Вести душевный разговор</span><br>
+        <input type="radio" name="q1" value="b"><span>Ebat мозги</span><br>
+        <hr>
+        <p>A ChTo escho люbIt дЕLatь VаLera</p>
+        <input type="radio" name="q2" value="a"><span>Вести душевный разговор</span><br>
+        <input type="radio" name="q2" value="b"><span>OtПравлYat беsAschie stikеры</span><br>
+        <hr>
+        <p>A ChTo escho</p>
+        <input type="radio" name="q3" value="a"><span>Вести душевный разговор</span><br>
+        <input type="radio" name="q3" value="b"><span>Dohua kushaц</span><br>
+        <hr><br>
+        <input type="button" value="valera" onclick="Check()">
+    </form>
+
+    <h2>Тест создал супермегахарош Ренат</h2>
+    <script type="text/javascript">
+        function Check() {
+            var q1 = document.myform.q1.value;
+            var q2 = document.myform.q2.value;
+            var q3 = document.myform.q3.value;
+            var count = 0;
+
+            if (q1 == "b") {
+                count++;
+            }
+            if (q2 == "b") {
+                count++;
+            }
+            if (q3 == "b") {
+                count++;
+            }
+            if (count == 3) {
+                document.write("Ты 100000000000000000...0000000%+1% Valera!")
+            }
+            else {
+                document.write("Ты дешевая фальшивка")
+            }
+        }
+    </script>
+</body>
+</html>
